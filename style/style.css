@@ -4,6 +4,9 @@ body {
     background-color: azure;
     margin: 20px;
 }
+#principal {
+    background-color: aquamarine;
+}
 section {
     text-align: justify;
     margin-bottom: 20px;
@@ -21,6 +24,9 @@ section {
 }
 #usuarios_administradores {
     background-color: antiquewhite;
+}
+#tipos_usuarios {
+    background-color: lightyellow;
 }
 h1 {
     font-family:'Courier New', Courier, monospace;

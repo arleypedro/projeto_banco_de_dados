@@ -46,23 +46,130 @@
                     </ul>
             </ol>
     </section>
-
     <section id="usuarios_administradores">
             <ol start="4">
-                <li>Usuários e Administradores de Banco de Dados:
+                <li>Usuários e Administradores de Banco de Dados
                 </li>
                 <p>
                     Um banco de dados possui diferentes tipos de usuários:
-                 /p>
+                </p>
                 <ul>
                     <li>Usuários Finais: Aqueles que utilizam o banco de dados para realizar tarefas específicas, como consultar informações ou inserir novos registros.
                     <li>Administradores de Dados: Responsáveis por projetar, implementar e manter o banco de dados, garantindo sua segurança e performance.
                 </ul>
                 <p>
-                    <a href="aprofundar1.html">Click aqui</a>, para aprofundar nas definições e responsabilidades dos diferentes tipos de usuários em um banco de dados.<br>
-                
-            
+                    <a href="aprofundar1.html">Click aqui</a>, para aprofundar nas definições e responsabilidades dos diferentes tipos de usuários em um banco de dados.<br>     
              </ol>
+    </section>
+    <section id="arquitetura_sgbd">
+        <h1>Aula2</h1>
+        <ol start="5">
+                    <li>
+                        Arquitetura de um SGBD
+                    </li>
+                    <p>
+                        Explorando a Arquitetura e Abstração de Dados
+                    </p>
+                <ul>
+                    <p>
+                        Introdução:
+                    </p>
+                    <p> 
+                        Vamos explorar a arquitetura de um Sistema de Gerenciamento de Banco de Dados (SGBD) e entender como os diferentes níveis de abstração de dados contribuem para a organização e manipulação eficiente das informações.
+                    </p>
+                    <p>
+                        Níveis de Abstração de Dados:
+                    </p>
+                    <p>
+                        Os níveis de abstração de dados são um conceito fundamental em SGBDs, permitindo aos usuários interagir com o banco de dados de diferentes maneiras, ocultando a complexidade da implementação física dos dados.
+                    </p>
+                    <ul>
+                        <li>
+                            Nível Físico: O nível mais baixo de abstração descreve como os dados são fisicamente armazenados em disco. Detalhes como estrutura de arquivos, organização de índices e métodos de acesso são definidos neste nível.
+                        </li>
+                        <li>
+                            Nível Lógico (ou Conceitual): Define a estrutura lógica do banco de dados, incluindo tabelas, relacionamentos entre elas, restrições de integridade e outras informações relevantes.
+                        </li>
+                        <li>
+                            Nível de Visão (ou Externo): O nível mais alto de abstração, que oferece diferentes visões personalizadas do banco de dados para os usuários. Cada visão apresenta apenas os dados relevantes para um grupo específico de usuários, simplificando a interação e protegendo informações confidenciais.
+                        </li>
+                        </ul>
+                    <p>
+                        Independência de Dados
+                    </p>
+                    <p>
+                        A independência de dados é um dos principais benefícios da utilização de níveis de abstração<br>
+                        A independência de dados permite modificar o esquema de um nível sem afetar os níveis superiores.
+                    </p>
+                    <ul>
+                        <li>
+                            Independência de Dados Lógica: A capacidade de modificar o esquema conceitual sem afetar os programas de aplicação ou as visões externas.
+                        </li>
+                        <li>
+                            Independência de Dados Física: A capacidade de modificar o esquema físico (armazenamento) sem afetar o esquema conceitual.
+                         </li>
+                        </li>
+                    </ul>
+                    <p>
+                         Linguagens de Banco de Dados
+                        Para interagir com o SGBD, utilizamos linguagens de banco de dados. As principais categorias são:
+                    </p>
+                    <ul>
+                        <li>
+                            DDL (Linguagem de Definição de Dados): Utilizada para definir o esquema do banco de dados. Comandos como CREATE, ALTER e DROP pertencem a esta categoria.
+                        </li>
+                        <li>
+                            DML (Linguagem de Manipulação de Dados): Usada para manipular os dados armazenados no banco. Comandos como SELECT, INSERT, UPDATE e DELETE fazem parte desta categoria.
+                        </li>
+                        <li>
+                            DCL (Linguagem de Controle de Dados): Define os privilégios de acesso e segurança do banco de dados. Comandos como GRANT e REVOKE são exemplos.
+                        </li>
+                    </ul>
+                    <p>
+                        Conclusão
+                    </p>
+                    <p>
+                        Compreender a arquitetura de um SGBD e os diferentes níveis de abstração de dados é essencial para o desenvolvimento e gerenciamento eficiente de banco de dados. A independência de dados e as linguagens de banco de dados são ferramentas que facilitam a administração, a segurança e a flexibilidade do sistema.
+                    </p>
+                    <hr>
+                    <p>
+                        Observação: As informações acima são de caráter geral sobre a arquitetura de um SGBD. Para um aprofundamento no tema, consulte o material indicado na referência.
+                    </p>
+                
+                </ul>                
+        </ol>
+    </section>
+    <section id="identidade_relacionamento">
+        <p>
+            Aula 3: Modelagem de Dados Entidade-Relacionamento (ER)
+Introdução
+Nesta aula, exploraremos a Modelagem de Dados Entidade-Relacionamento (ER), uma ferramenta essencial para o projeto de bancos de dados. Aprenderemos os conceitos básicos, a construção de diagramas ER e como mapear esse modelo para o modelo relacional.
+Conceitos Básicos
+    • Entidades: Uma entidade representa um objeto do mundo real com características em comum. Por exemplo, em um sistema de biblioteca, "Livro" e "Usuário" seriam entidades.
+    • Atributos: Características que descrevem uma entidade. "Título", "Autor" e "ISBN" seriam atributos da entidade "Livro".
+    • Relacionamentos: Associações entre entidades. O relacionamento "Empréstimo" poderia conectar as entidades "Livro" e "Usuário".
+Diagramas ER e suas Notações
+Diagramas ER são representações gráficas do modelo de dados. Utilizam símbolos para representar entidades, atributos e relacionamentos, facilitando a visualização e a comunicação do projeto do banco de dados.
+    • Notação: Existem diferentes notações para diagramas ER, sendo a notação "Pé de Galinha" uma das mais comuns. 
+        ◦ Retângulos: Representam entidades. 
+        ◦ Elipses: Representam atributos. 
+        ◦ Losangos: Representam relacionamentos. 
+        ◦ Linhas: Conectam entidades a seus atributos e relacionamentos. 
+Mapeamento do Modelo ER para o Modelo Relacional
+O modelo ER é convertido para o modelo relacional para ser implementado em um SGBD relacional.
+    • Entidades: Cada entidade se torna uma tabela no banco de dados. 
+    • Atributos: Os atributos da entidade se tornam colunas da tabela. 
+    • Relacionamentos: Dependendo da cardinalidade (um-para-um, um-para-muitos, muitos-para-muitos), o relacionamento pode gerar: 
+        ◦ Uma nova tabela com chaves estrangeiras. 
+        ◦ Chaves estrangeiras em tabelas existentes. 
+Exemplo:
+    • Entidade "Livro": Tabela "Livros" com colunas "Título", "Autor", "ISBN". 
+    • Entidade "Usuário": Tabela "Usuários" com colunas "Nome", "Endereço", "CPF". 
+    • Relacionamento "Empréstimo": Tabela "Empréstimos" com chaves estrangeiras para "Livros" e "Usuários", além de atributos como "Data do Empréstimo" e "Data da Devolução". 
+Conclusão
+A Modelagem de Dados ER é fundamental para o projeto de bancos de dados eficientes e bem estruturados. Compreender seus conceitos e o processo de mapeamento para o modelo relacional é crucial para a criação de sistemas de informação robustos. A referência pode conter informações adicionais sobre a modelagem ER e sua aplicação.
+
+        </p>
     </section>
 </body>
 </html>

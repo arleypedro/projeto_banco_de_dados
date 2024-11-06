@@ -1,21 +1,47 @@
 @charset "UTF-8";
+
+/* Paleta de Cores */
+:root {
+    --fundo-secao: #f4f8fb;  /* Cor de fundo suave */
+    --cor-destaque: #7fb5d6; /* Cor de destaque para links ou botões */
+    --texto-cor: #333333;     /* Cor de texto principal */
+    --titulo-cor: #2c3e50;    /* Cor para títulos (h1, h2, etc.) */
+    --borda-cor: #ccd6e0;     /* Cor de borda suave */
+    --teste1-Cor-Clara:#a8c8e3; /*Um tom*/
+    --teste1-Cor-escura:#5d8aa8;
+    --teste1-Cor-destaque:#4f7f99; /*Um tom*/
+    --teste1-Cor-Complementar:#d4e3f7;
+    --teste1-Cor-Borda:#c0d4e7;
+}
+
+/* Estilos Globais */
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: azure;
+    font-family:Arial, sans-serif;
+    color: var(--texto-cor);
+    background-color:var(--cor-destaque);
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    background-color:var(--fundo-secao);
+}
+/* Estilo das Seções */
+section {
+    background-color: var(--fundo-secao);
+    border: 1px solid var(--borda-cor); /*borda suave*/
+    border-radius: 8px; /*bordas arredondadas*/
+    text-align: justify;
+    padding: 20px;
     margin: 20px;
 }
-#principal {
-    background-color: aquamarine;
-}
-section {
-    text-align: justify;
-    margin-bottom: 20px;
-}
+/*
 #conceitos {
-    background-color: antiquewhite;
+    background-color: var(--fundo-secao);
 }
+    */
 #introducao {
-    background-color:aquamarine;
+    background-color:var(--fundo-secao);
 }
 #sgbd {
     background-color: antiquewhite;}
@@ -25,28 +51,85 @@ section {
 #usuarios_administradores {
     background-color: antiquewhite;
 }
-#tipos_usuarios {
+#usuarios_finais {
     background-color: lightyellow;
 }
+#usuarios_administradores {
+    background-color: lightblue;
+}
+#resumo_usuarios {
+    background-color: blanchedalmond;
+}
+#resumo_usuarios h1 {
+    color: blue;
+    text-align: left;
+    text-indent: 40px;
+}
+#arquitetura_sgbd {
+    background-color: darkkhaki;
+}
+#identidade_relacionamento {
+    background-color: chartreuse;
+}
+
 h1 {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 110%;
+    font-family:Arial, sans-serif;
+    font-size: 150%;
     font-style: italic;
+    color: var(--titulo-cor);
     text-align: center;
 }
-header {
-    background-color: aqua;
+#pagina_principal {
+    background-color: var(--cor-destaque);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 table {
     border-collapse: collapse; /* Remove o espaço entre as bordas */
-    width: 50%; /* Largura da tabela */
+    width: 100%; /* Largura da tabela */
+    margin-top: 20px;
+    
 }
-th, td {
-    border: 1px solid black; /* Borda das células */
-    padding: 8px; /* Espaçamento interno */
-    text-align: left; /* Alinhamento do texto */
+/* Estilo para as linhas da tabela (tr) */
+tr {
+    background-color: var(--teste1-Cor-Clarar); /* Aplica a cor de fundo definida na variável */
 }
-th {
-    background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
+
+/* Estilo para as células da tabela (td) */
+    
+td {
+    border: 1px solid #ddd;       /* Borda de 1px, cor cinza claro (#ddd) */
+    padding: 20px;                 /* Adiciona 20px de espaçamento interno nas células */
+    text-align: center;            /* Alinha o /texto ao centro dentro da célula */
+    background-color: inherit;     /* Faz com que o fundo da célula herde a cor da linha (tr) */
 }
+
+/* Estilo para os links dentro das células da tabela (a) */
+td a {
+    color: #337ab7;                /* Cor azul para os links */
+    text-decoration: none;         /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilo para o estado de hover (passar o mouse) nos links dentro das células */
+td a:hover {
+    color: #23527c;                /* Escurece a cor do link quando o mouse passa por cima */
+}
+
+/* Estilo para linhas ímpares na tabela */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;     /* Aplica fundo cinza claro para as células ímpares */
+}
+/* Estilo para células ímpares nas linhas da tabela */
+td:nth-child(odd) {
+    background-color: #f9f9f9;     /* Aplica fundo cinza claro para as células ímpares */
+}
+
+/* Estilo para o título da seção #resumo_usuarios */
+#resumo_usuarios h1 {
+    color: blue;
+    text-align: left;
+    text-indent: 40px;
+}
+

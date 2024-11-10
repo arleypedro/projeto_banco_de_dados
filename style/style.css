@@ -7,38 +7,47 @@
     --texto-cor: #333333;     /* Cor de texto principal */
     --titulo-cor: #2c3e50;    /* Cor para títulos (h1, h2, etc.) */
     --borda-cor: #ccd6e0;     /* Cor de borda suave */
-    --teste1-Cor-Clara:#a8c8e3; /*Um tom*/
-    --teste1-Cor-escura:#5d8aa8;
-    --teste1-Cor-destaque:#4f7f99; /*Um tom*/
-    --teste1-Cor-Complementar:#d4e3f7;
-    --teste1-Cor-Borda:#c0d4e7;
+    --fundo-cor-Clara:#a8c8e3; /*Um tom claro*/
+    --cor-links-antes:#5d8aa8; /*cor antes de clicar*/
+    --cor-destaque:#4f7f99; /*Um tom escuro*/
+    --cor-complementar:#d4e3f7;
+    --cor-linha-impar:#f9f9f9;
+    --cor-borda-cedulas:#ddd;
+    --cor-Borda:#c0d4e7;
+    --cor-links-passar-o-mouse:#0019fc;
 }
+
 /* Estilos Globais */
 body {
     font-family:Arial, sans-serif;
     color: var(--texto-cor);
-    background-color:var(--cor-destaque);
+    background-color:var(--fundo-cor-Clara);
+    
     margin: 0;
     padding: 0;
 }
+
+/* Estilo de cabeçalho*/
 #pagina_principal {
-    background-color: var(--cor-destaque);
+    background-color: var(--fundo-cor-Clara);
     margin: 0;
     text-align: center;
 }
+
+/*Estilo do main*/
 #principal {
-    background-color:var(--fundo-secao);
+    background-color:var(--fundo-cor-Clara);
    /* padding: 20px;*/
 }
 
-/* Estilos para o <nav> com a tabela */
+/* Estilos para o nav com a tabela */
 nav {
-    background-color:var(--borda-cor);
-    display: flex;
+    background-color:var(--fundo-cor-Clara);   
+    display: flex;  /* Define o layout do <nav> como flexível (flexbox), permite o controle de alinhamento e distribuição dos itens internos neste caso a tabela */
     justify-content: center; /* Centraliza a tabela dentro do <nav> */
-    margin-top: 20px;
 }
 
+/* Estilos para os titulos h1 */
 h1 {
     font-family:Arial, sans-serif;
     font-size: 150%;
@@ -46,47 +55,64 @@ h1 {
     color: var(--titulo-cor);
     text-align: center;
 }
+img {
+    width: 35px;
+    height: 42px;
+}
 
+/* Estilos para a tabela */
 table {
     border-collapse: collapse; /* Remove o espaço entre as bordas */
     width: 50%; /* Largura da tabela */
-    margin-top: 20px;
-    
+    margin-top: 20px; /*margem superior*/
+    margin-bottom: 20px; /*margem inferior*/   
 }
+
+/* Estilo para o cabeçalho da tabela (th) */
+th {
+    background-color: var(--cor-destaque); /*cor de fundo */
+    border: 2px solid var(--cor-borda-cedulas); /* Borda de 2px, cor cinza claro (#ddd) */
+    padding: 12px;
+    text-align: center;
+}
+
 /* Estilo para as linhas da tabela (tr) */
 tr {
-    background-color: var(--teste1-Cor-Clarar); /* Aplica a cor de fundo definida na variável */
-}
-
-/* Estilo para as células da tabela (td) */
-    
-td {
-    border: 1px solid #ddd;       /* Borda de 1px, cor cinza claro (#ddd) */
-    padding: 20px;                 /* Adiciona 20px de espaçamento interno nas células */
-    text-align: center;            /* Alinha o /texto ao centro dentro da célula */
-    background-color: inherit;     /* Faz com que o fundo da célula herde a cor da linha (tr) */
-}
-
-/* Estilo para os links dentro das células da tabela (a) */
-td a {
-    color: #337ab7;                /* Cor azul para os links */
-    text-decoration: none;         /* Remove o sublinhado padrão dos links */
-}
-
-/* Estilo para o estado de hover (passar o mouse) nos links dentro das células */
-td a:hover {
-    color: #23527c;                /* Escurece a cor do link quando o mouse passa por cima */
+    background-color: var(--cor-complementar); /* Aplica a cor de fundo definida na variável */
 }
 
 /* Estilo para linhas ímpares na tabela */
 tr:nth-child(odd) {
-    background-color: #f9f9f9;     /* Aplica fundo cinza claro para as células ímpares */
+    background-color:var(--cor-linha-impar); /* Aplica fundo cinza claro para as células ímpares */
 }
-/* Estilo para células ímpares nas linhas da tabela */
-td:nth-child(odd) {
-    background-color: #f9f9f9;     /* Aplica fundo cinza claro para as células ímpares */
+
+/* Estilo para as células da tabela (td) */    
+td {
+    border: 2px solid var(--cor-borda-cedulas);/* Borda de 2px, cor cinza claro (#ddd) */
+    padding: 20px;             /* Adiciona 20px de espaçamento interno nas células */
+    text-align: center;        /* Alinha o /texto ao centro dentro da célula */
 }
-/* Estilo das Seções */
+
+/* Estilo para os links dentro das células da tabela (a) */
+td a {
+    color: var(--cor-links-antes); /* Cor azul para os links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilo para o estado de hover (passar o mouse) nos links dentro das células */
+td a:hover {
+    color: var(--cor-links-passar-o-mouse); /* Escurece a cor do link quando o mouse passa por cima */
+}
+
+/*Estilo para o roda pé*/
+footer {
+    background-color: var(--fundo-Cor-Clara);
+    margin-top: 20px;
+    /*margin-bottom: 20px;*/
+    text-indent: 30px;
+}
+
+/* Estilo das Seções das paginas secundárias*/
 section {
     background-color: var(--fundo-secao);
     border: 1px solid var(--borda-cor); /*borda suave*/

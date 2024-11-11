@@ -2,7 +2,20 @@
 
 /* Paleta de Cores */
 :root {
-    --fundo-secao: #f4f8fb;  /* Cor de fundo suave */
+    --mais-claro1: #d0e4f7; /*Um azul bem suave, quase como um azul céu muito pálido.*/
+    --mais-claro2: #b8d8f0; /*Um tom suave, ainda claro, mas um pouco mais saturado do que o anterior.*/
+    --mais-claro3: #9cc0e8; /*Um azul claro com um toque de lavanda, mantendo a suavidade.*/
+    --mais-claro4: #a8c8e3; /*O tom central um azul suave e fresco.*/
+    --mais-escuro1: #86b1d1; /* tom um pouco mais forte e levemente mais saturado, sem perder a suavidade.*/
+    --mais-escuro2: #6f9ac2; /*Azul mais profundo e sofisticado, ainda suave, mas mais intenso.*/
+    --mais-escuro3: #5784b3; /*Um tom de azul mais escuro e elegante, mais próximo do azul royal.*/
+    --mais-escuro4: #406c9c; /*Azul médio-escuro, com um toque clássico e bem equilibrado.*/
+    
+    --fundo-secao: #f4f8fb;         /* Cor de fundo suave */
+    --cor-fundo-secao1:#f9f9f9;     /* Cor de fundo suave */
+    --cor-fundo-secao2:lightyellow; /* Cor de fundo suave */
+    --cor-fundo-secao3:#7fb5d6;  /* Cor de fundo suave */
+    
     --cor-destaque: #7fb5d6; /* Cor de destaque para links ou botões */
     --texto-cor: #333333;     /* Cor de texto principal */
     --titulo-cor: #2c3e50;    /* Cor para títulos (h1, h2, etc.) */
@@ -15,13 +28,13 @@
     --cor-borda-cedulas:#ddd;
     --cor-Borda:#c0d4e7;
     --cor-links-passar-o-mouse:#0019fc;
-}
+}    
 
 /* Estilos Globais */
 body {
     font-family:Arial, sans-serif;
     color: var(--texto-cor);
-    background-color:var(--fundo-cor-Clara);
+    background-color:var(--mais-claro1);
     
     margin: 0;
     padding: 0;
@@ -29,20 +42,20 @@ body {
 
 /* Estilo de cabeçalho*/
 #pagina_principal {
-    background-color: var(--fundo-cor-Clara);
+    background-color: var(--mais-claro1);
     margin: 0;
     text-align: center;
 }
 
 /*Estilo do main*/
 #principal {
-    background-color:var(--fundo-cor-Clara);
+    background-color:var(--mais-claro1);
    /* padding: 20px;*/
 }
 
 /* Estilos para o nav com a tabela */
 nav {
-    background-color:var(--fundo-cor-Clara);   
+    background-color:var(--mais-claro1);   
     display: flex;  /* Define o layout do <nav> como flexível (flexbox), permite o controle de alinhamento e distribuição dos itens internos neste caso a tabela */
     justify-content: center; /* Centraliza a tabela dentro do <nav> */
 }
@@ -114,7 +127,6 @@ footer {
 
 /* Estilo das Seções das paginas secundárias*/
 section {
-    background-color: var(--fundo-secao);
     border: 1px solid var(--borda-cor); /*borda suave*/
     border-radius: 8px; /*bordas arredondadas*/
     text-align: justify;
@@ -122,24 +134,32 @@ section {
     margin: 20px;
 }
 #introducao {
-    background-color:var(--fundo-secao);
+    background-color:var(--mais-claro2);
+    border: 2px solid var(--mais-claro3); /*borda suave*/
 }
 #sgbd {
-    background-color: antiquewhite;}
+    background-color:var(--mais-claro3);
+    border: 2px solid var(--mais-escuro1); /*borda suave*/
+}
 #modelo_de_dados {
-    background-color: aquamarine;
+    background-color:var(--mais-claro4);
+    border: 2px solid var(--mais-escuro1); /*borda suave*/
 }
 #usuarios_administradores {
-    background-color: antiquewhite;
+    background-color:var(--mais-escuro1);
+    border: 2px solid var(--mais-escuro2); /*borda suave*/
 }
 #usuarios_finais {
-    background-color: lightyellow;
+    background-color:var(--mais-escuro2);
+    border: 2px solid var(--mais-claro3); /*borda suave*/
 }
-#usuarios_administradores {
-    background-color: lightblue;
+
+#arquitetura_sgbd {
+    background-color: var(--mais-escuro1);
+    border: 2px solid var(--mais-escuro2); /*borda suave*/
 }
 #resumo_usuarios {
-    background-color: blanchedalmond;
+    background-color: var(--mais-escuro4);
 }
 #resumo_usuarios h1 {
     color: blue;
@@ -147,10 +167,11 @@ section {
     text-indent: 40px;
 }
 #arquitetura_sgbd {
-    background-color: darkkhaki;
+    background-color: var(--mais-claro4);
 }
 #identidade_relacionamento {
-    background-color: chartreuse;
+    background-color: var(--mais-escuro2);
+    border: 2px solid var(--mais-escuro3); /*borda suave*/
 }
 
 

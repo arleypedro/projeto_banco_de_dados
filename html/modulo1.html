@@ -234,33 +234,69 @@
                             </p>
                             <ul>
                                 <li>
-                                    "Pé de Galinha" utiliza-se para representar relacionamentos uma seta com tres linhas .
-                                    <img src="/imagens/pe_de_galinha.png" alt="Imagem da notação pé de galinha">
+                                    "Pé de Galinha" utiliza-se para representar relacionamentos, seu simbolo é uma seta com tres linhas .
                                     <br>Indica a cardinalidade do relacionamento (1:1, 1:N, N:M)
                                 </li>
                                 <li>
                                     Retângulos: Representam entidades.
                                 </li>
+                                <li>
+                                    Elipses: Representam atributos.
+                                </li>
+                                <li>
+                                    Losangos: Representam relacionamentos.
+                                </li>
+                                <li>Linhas: Conectam entidades a seus atributos e relacionamentos.</li>
+                            </ul>
+                            <p>
+                                Mapeamento do Modelo ER para o Modelo Relacional
+                                <br>O modelo ER é convertido para o modelo relacional para ser implementado em um SGBD relacional.
+                            </p>
+                            <ul>
+                                <li>
+                                    Entidades: Cada entidade se torna uma tabela no banco de dados.
+                                </li>
+                                <li>
+                                    Atributos: Os atributos da entidade se tornam colunas da tabela.
+                                </li>
+                                <li>
+                                    Relacionamentos: Dependendo da cardinalidade (um-para-um, um-para-muitos, muitos-para-muitos), o relacionamento pode gerar:
+                                </li>
+                                <li>
+                                    Uma nova tabela com chaves estrangeiras.
+                                </li>
+                                <li>
+                                    Chaves estrangeiras em tabelas existentes.
+                                </li>
+                                <p>
+                                    Exemplos:
+                                </p>
+                                <li>
+                                    Entidade "Livro": Tabela "Livros" com colunas "Título", "Autor", "ISBN". 
+                                </li>
+                                <li>
+                                    Entidade "Usuário": Tabela "Usuários" com colunas "Nome", "Endereço", "CPF". 
+                                <li>
+                                    Relacionamento "Empréstimo": Tabela "Empréstimos" com chaves estrangeiras para "Livros" e "Usuários", além de atributos como "Data do Empréstimo" e "Data da Devolução". 
+                                </li>
+                                <p>
+                                    Conclusão
+                                    A Modelagem de Dados ER é fundamental para o projeto de bancos de dados eficientes e bem estruturados. Compreender seus conceitos e o processo de mapeamento para o modelo relacional é crucial para a criação de sistemas de informação robustos.
+                            </p>
                             </ul>
                     
-                    ◦ Elipses: Representam atributos.
-                    ◦ Losangos: Representam relacionamentos.
-                    ◦ Linhas: Conectam entidades a seus atributos e relacionamentos.
-                            Mapeamento do Modelo ER para o Modelo Relacional
-                            O modelo ER é convertido para o modelo relacional para ser implementado em um SGBD relacional.
-                            • Entidades: Cada entidade se torna uma tabela no banco de dados.
-                            • Atributos: Os atributos da entidade se tornam colunas da tabela.
-                            • Relacionamentos: Dependendo da cardinalidade (um-para-um, um-para-muitos, muitos-para-muitos), o relacionamento pode gerar:
-                    ◦ Uma nova tabela com chaves estrangeiras.
-                    ◦ Chaves estrangeiras em tabelas existentes.
                     
-                </ul>     Exemplo:
-                        • Entidade "Livro": Tabela "Livros" com colunas "Título", "Autor", "ISBN". 
-                        • Entidade "Usuário": Tabela "Usuários" com colunas "Nome", "Endereço", "CPF". 
-                        • Relacionamento "Empréstimo": Tabela "Empréstimos" com chaves estrangeiras para "Livros" e "Usuários", além de atributos como "Data do Empréstimo" e "Data da Devolução". 
-                        Conclusão
-                        A Modelagem de Dados ER é fundamental para o projeto de bancos de dados eficientes e bem estruturados. Compreender seus conceitos e o processo de mapeamento para o modelo relacional é crucial para a criação de sistemas de informação robustos. A referência pode conter informações adicionais sobre a modelagem ER e sua aplicação.
-                
+                                             
+                            
+                            
+                    
+                    
+                    
+                </ul>     
+                        
+                        
+                        
+                        
                         </p>
             </ol>
     </section>

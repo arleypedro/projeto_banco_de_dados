@@ -203,32 +203,58 @@
             <ol start="6">
                 <li>
                     <p>
-                        Modelagem de Dados Entidade-Relacionamento (ER)
+                        Modelagem de Dados Entidade-Relacionamento (ER) é uma ferramenta essencial para o projeto de bancos de dados.
                     </p>
-                </li>
-                                
-                        
-                <p>Introdução</p>
-                A Modelagem de Dados Entidade-Relacionamento (ER), uma ferramenta essencial para o projeto de bancos de dados. Aprenderemos os conceitos básicos, a construção de diagramas ER e como mapear esse modelo para o modelo relacional.
-                        Conceitos Básicos
-                        • Entidades: Uma entidade representa um objeto do mundo real com características em comum. Por exemplo, em um sistema de biblioteca, "Livro" e "Usuário" seriam entidades.
-                        • Atributos: Características que descrevem uma entidade. "Título", "Autor" e "ISBN" seriam atributos da entidade "Livro".
-                        • Relacionamentos: Associações entre entidades. O relacionamento "Empréstimo" poderia conectar as entidades "Livro" e "Usuário".
-                         Diagramas ER e suas Notações
-                        Diagramas ER são representações gráficas do modelo de dados. Utilizam símbolos para representar entidades, atributos e relacionamentos, facilitando a visualização e a comunicação do projeto do banco de dados.
-                        • Notação: Existem diferentes notações para diagramas ER, sendo a notação "Pé de Galinha" uma das mais comuns.
-                ◦ Retângulos: Representam entidades.
-                ◦ Elipses: Representam atributos.
-                ◦ Losangos: Representam relacionamentos.
-                ◦ Linhas: Conectam entidades a seus atributos e relacionamentos. 
-                        Mapeamento do Modelo ER para o Modelo Relacional
-                        O modelo ER é convertido para o modelo relacional para ser implementado em um SGBD relacional.
-                        • Entidades: Cada entidade se torna uma tabela no banco de dados. 
-                        • Atributos: Os atributos da entidade se tornam colunas da tabela. 
-                        • Relacionamentos: Dependendo da cardinalidade (um-para-um, um-para-muitos, muitos-para-muitos), o relacionamento pode gerar:
-                ◦ Uma nova tabela com chaves estrangeiras.
-                ◦ Chaves estrangeiras em tabelas existentes. 
-                     Exemplo:
+                </li>        
+                <ul>
+                    <p>
+                        Conceitos Básicos:
+                    </p>
+                        <li>
+                            Entidades: Uma entidade representa um objeto do mundo real com características em comum.
+                            <br> Por exemplo, em um sistema de biblioteca, "Livro" e "Usuário" seriam entidades.
+                        </li>
+                            <li>
+                                Atributos: Características que descrevem uma entidade.
+                                <br> "Título", "Autor" e "ISBN" seriam atributos da entidade "Livro".
+                            </li>
+                            <li>
+                                Relacionamentos: Associações entre entidades.
+                                <br>O relacionamento "Empréstimo" poderia conectar as entidades "Livro" e "Usuário".
+                            </li>
+                            <p>
+                                Diagramas ER e suas Notações
+                            </p>
+                            <p>
+                                Diagramas ER: São representações gráficas do modelo de dados.
+                                <br> Utilizam símbolos para representar entidades, atributos e relacionamentos, facilitando a visualização e a comunicação do projeto do banco de dados.
+                            </p>
+                            <p>
+                                Notação: Existem diferentes notações para diagramas ER.
+                            </p>
+                            <ul>
+                                <li>
+                                    "Pé de Galinha" utiliza-se para representar relacionamentos uma seta com tres linhas .
+                                    <img src="/imagens/pe_de_galinha.png" alt="Imagem da notação pé de galinha">
+                                    <br>Indica a cardinalidade do relacionamento (1:1, 1:N, N:M)
+                                </li>
+                                <li>
+                                    Retângulos: Representam entidades.
+                                </li>
+                            </ul>
+                    
+                    ◦ Elipses: Representam atributos.
+                    ◦ Losangos: Representam relacionamentos.
+                    ◦ Linhas: Conectam entidades a seus atributos e relacionamentos.
+                            Mapeamento do Modelo ER para o Modelo Relacional
+                            O modelo ER é convertido para o modelo relacional para ser implementado em um SGBD relacional.
+                            • Entidades: Cada entidade se torna uma tabela no banco de dados.
+                            • Atributos: Os atributos da entidade se tornam colunas da tabela.
+                            • Relacionamentos: Dependendo da cardinalidade (um-para-um, um-para-muitos, muitos-para-muitos), o relacionamento pode gerar:
+                    ◦ Uma nova tabela com chaves estrangeiras.
+                    ◦ Chaves estrangeiras em tabelas existentes.
+                    
+                </ul>     Exemplo:
                         • Entidade "Livro": Tabela "Livros" com colunas "Título", "Autor", "ISBN". 
                         • Entidade "Usuário": Tabela "Usuários" com colunas "Nome", "Endereço", "CPF". 
                         • Relacionamento "Empréstimo": Tabela "Empréstimos" com chaves estrangeiras para "Livros" e "Usuários", além de atributos como "Data do Empréstimo" e "Data da Devolução". 

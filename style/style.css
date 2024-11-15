@@ -173,7 +173,14 @@ section {
     background-color: var(--mais-escuro2);
     border: 2px solid var(--mais-escuro3); /*borda suave*/
 }
-
+#pe_galinha {
+    width: 80px;
+    height: 10px;
+}
+#cardinalidade {
+    width: 400px;
+    height: 250px;
+}
 
 /* Estilo para o título da seção #resumo_usuarios */
 #resumo_usuarios h1 {

@@ -210,98 +210,127 @@
                     <p>
                         Conceitos Básicos:
                     </p>
-                        <li>
-                            Entidades: Uma entidade representa um objeto do mundo real com características em comum.
-                            <br> Por exemplo, em um sistema de biblioteca, "Livro" e "Usuário" seriam entidades.
-                        </li>
-                            <li>
-                                Atributos: Características que descrevem uma entidade.
-                                <br> "Título", "Autor" e "ISBN" seriam atributos da entidade "Livro".
-                            </li>
-                            <li>
-                                Relacionamentos: Associações entre entidades.
-                                <br>O relacionamento "Empréstimo" poderia conectar as entidades "Livro" e "Usuário".
-                            </li>
-                            <p>
-                                Diagramas ER e suas Notações
-                            </p>
-                            <p>
-                                Diagramas ER: São representações gráficas do modelo de dados.
-                                <br> Utilizam símbolos para representar entidades, atributos e relacionamentos, facilitando a visualização e a comunicação do projeto do banco de dados.
-                            </p>
-                            <p>
-                                Notação: Existem diferentes notações para diagramas ER.
-                            </p>
-                            <ul>
-                                <li>
-                                    "Pé de Galinha" <img id="pe_galinha" src="/imagens/pe_de_galinha2.png" alt="imagem pé de galinha">utiliza-se para representar relacionamentos.
-                                    <br>Indica a cardinalidade do relacionamento (1:1, 1:N, N:M)
-                                </li>
-                                <p>
-                                    <img id="cardinalidade" src="/imagens/cardinalidade3.png" alt="imagem dos simbolos de cardinalidade">
-                                </p>
-                                <li>
-                                    Retângulos: Representam entidades.
-                                </li>
-                                <li>
-                                    Elipses: Representam atributos.
-                                </li>
-                                <li>
-                                    Losangos: Representam relacionamentos.
-                                </li>
-                                <li>Linhas: Conectam entidades a seus atributos e relacionamentos.</li>
-                            </ul>
-                            <p>
-                                Mapeamento do Modelo ER para o Modelo Relacional
-                                <br>O modelo ER é convertido para o modelo relacional para ser implementado em um SGBD relacional.
-                            </p>
-                            <ul>
-                                <li>
-                                    Entidades: Cada entidade se torna uma tabela no banco de dados.
-                                </li>
-                                <li>
-                                    Atributos: Os atributos da entidade se tornam colunas da tabela.
-                                </li>
-                                <li>
-                                    Relacionamentos: Dependendo da cardinalidade (um-para-um, um-para-muitos, muitos-para-muitos), o relacionamento pode gerar:
-                                </li>
-                                <li>
-                                    Uma nova tabela com chaves estrangeiras.
-                                </li>
-                                <li>
-                                    Chaves estrangeiras em tabelas existentes.
-                                </li>
-                                <p>
-                                    Exemplos:
-                                </p>
-                                <li>
-                                    Entidade "Livro": Tabela "Livros" com colunas "Título", "Autor", "ISBN". 
-                                </li>
-                                <li>
-                                    Entidade "Usuário": Tabela "Usuários" com colunas "Nome", "Endereço", "CPF". 
-                                <li>
-                                    Relacionamento "Empréstimo": Tabela "Empréstimos" com chaves estrangeiras para "Livros" e "Usuários", além de atributos como "Data do Empréstimo" e "Data da Devolução". 
-                                </li>
-                                <p>
-                                    Conclusão
-                                    A Modelagem de Dados ER é fundamental para o projeto de bancos de dados eficientes e bem estruturados. Compreender seus conceitos e o processo de mapeamento para o modelo relacional é crucial para a criação de sistemas de informação robustos.
-                            </p>
-                            </ul>
-                    
-                    
-                                             
-                            
-                            
-                    
-                    
-                    
-                </ul>     
-                        
-                        
-                        
-                        
-                        </p>
+                    <li>
+                        Entidades: Uma entidade representa um objeto do mundo real com características em comum.
+                        <br> Por exemplo, em um sistema de biblioteca, "Livro" e "Usuário" seriam entidades.
+                    </li>
+                    <li>
+                        Atributos: Características que descrevem uma entidade.
+                        <br> "Título", "Autor" e "ISBN" seriam atributos da entidade "Livro".
+                    </li>
+                    <li>
+                        Relacionamentos: Associações entre entidades.
+                        <br>O relacionamento "Empréstimo" poderia conectar as entidades "Livro" e "Usuário".
+                    </li>
+                    <p>
+                        Diagramas ER e suas Notações
+                    </p>
+                    <p>
+                        Diagramas ER: São representações gráficas do modelo de dados.
+                        <br> Utilizam símbolos para representar entidades, atributos e relacionamentos, facilitando a visualização e a comunicação do projeto do banco de dados.                            </p>
+                    <p>
+                        Notação: Existem diferentes notações para diagramas ER.
+                    </p>
+                </ul>
+                <ul>
+                    <img id="pe_galinha" src="/imagens/pe_de_galinha2.png" alt="imagem pé de galinha">
+                    <li>
+                        "Pé de Galinha" utiliza-se para representar relacionamentos.
+                        <br>Indica a cardinalidade do relacionamento (1:1, 1:N, N:M)
+                    </li>
+                    <p>
+                        <img id="cardinalidade" src="/imagens/cardinalidade3.png" alt="imagem dos simbolos de cardinalidade">
+                        <br><img id="ER" src="/imagens/diagrama ER.png" alt="imagem do diagrama ER">
+                    </p>
+                    <li>
+                        Retângulos: Representam entidades.<br><img id="retangulo" src="/imagens/retangulo.png" alt="imagem do retangulo">
+                    </li>
+                    <li>
+                        Elipses: Representam atributos.<br><img id="elipse" src="/imagens/elipse.png" alt="imagem do retangulo">
+                    </li>
+                    <li>
+                        losangos: Representam relacionamentos. <br> <img id="losango" src="/imagens/losango.png" alt="imagem do losango">
+                    </li>
+                    <li>
+                        Linhas: Conectam entidades a seus atributos e relacionamentos.
+                    </li>
+                    <p>
+                        <img id="exemplo_ER" src="/imagens/exemplo diagrama ER.png" alt="imagem de diagrama ER">
+                    </p>
+                </ul>
+                    <p>
+                        Mapeamento do Modelo ER para o Modelo Relacional
+                        <br>O modelo ER é convertido para o modelo relacional para ser implementado em um SGBD relacional.
+                    </p>
+                <ul>
+                    <li>
+                        Entidades: Cada entidade se torna uma tabela no banco de dados.
+                    </li>
+                    <li>
+                        Atributos: Os atributos da entidade se tornam colunas da tabela.
+                    </li>
+                    <li>
+                        Relacionamentos: Dependendo da cardinalidade (um-para-um, um-para-muitos, muitos-para-muitos), o relacionamento pode gerar:
+                    </li>
+                    <li>
+                        Uma nova tabela com chaves estrangeiras.
+                    </li>
+                    <li>
+                        Chaves estrangeiras em tabelas existentes.
+                    </li>
+                    <p>
+                        Exemplo:
+                    </p>
+                    <p>
+                        Entidade "Livro": Tabela "Livros" com colunas "Título", "Autor", "ISBN".
+                    </p>
+                    <table id="livros">
+                        <thead>
+                            <tr>                                                
+                                <th colspan="3">
+                                    Entidade (Livros)
+                                </th>
+                            </tr>    
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Atributo (Título)
+                                </td>
+                                <td>
+                                    Atributo (Autor)
+                                </td>
+                                <td>
+                                    Atributo (ISBN)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    titulo do livro
+                                </td>
+                                <td>
+                                    nome do autor
+                                </td>
+                                <td>
+                                    código do livro
+                                </td>
+                                </tr>
+                        </tbody>
+                        </thead>
+                    </table> 
+                    </li>
+                    <p>
+                        Conclusão
+                    </p>
+                    <p>
+                        A Modelagem de Dados ER é fundamental para o projeto de bancos de dados eficientes e bem estruturados.
+                        <br>Compreender seus conceitos e o processo de mapeamento para o modelo relacional é crucial para a criação de sistemas de informação robustos.
+                    </p>
+                </ul>       
             </ol>
+            
     </section>
+    <footer class="voltar">
+        <a href="/index.html"><img src="/imagens/seta_voltar.png" alt="seta retroceder"></a>
+    </footer>
 </body>
 </html>

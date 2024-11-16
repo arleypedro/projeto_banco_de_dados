@@ -124,6 +124,9 @@ footer {
     /*margin-bottom: 20px;*/
     text-indent: 30px;
 }
+#livros tr {
+   background-color: var(--cor-destaque); 
+}
 
 /* Estilo das Seções das paginas secundárias*/
 section {
@@ -174,12 +177,32 @@ section {
     border: 2px solid var(--mais-escuro3); /*borda suave*/
 }
 #pe_galinha {
-    width: 80px;
-    height: 10px;
+    width: 234px;
+    height: 29px;
 }
 #cardinalidade {
     width: 400px;
     height: 250px;
+}
+#ER {
+    width: 400px;
+    height: 250px;
+}
+#retangulo {
+    width: 80px;
+    height: 30px;
+}
+#losango {
+    width: 110px;
+    height: 40px;
+}
+#elipse {
+    width: 80px;
+    height: 30px;
+}
+#exemplo_ER {
+    width: 400px;
+    height: 250px; 
 }
 
 /* Estilo para o título da seção #resumo_usuarios */
@@ -188,4 +211,12 @@ section {
     text-align: left;
     text-indent: 40px;
 }
-
+footer {
+    text-align: center;
+}
+.voltar  { 
+    color: var(--titulo-cor); /* Escurece a cor do link quando o mouse passa por cima */    
+}
+.voltar  a:hover { 
+    color: var(--mais-escuro2); /* Escurece a cor do link quando o mouse passa por cima */    
+}

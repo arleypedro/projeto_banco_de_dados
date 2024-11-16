@@ -6,6 +6,34 @@
     <title>Módulo 2</title>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates eveniet eaque sed magnam fuga expedita iusto nisi! Nulla ipsam fugiat illo, unde eos itaque aliquid dolore in quibusdam dolorem.</p>
+    <p>Resumo para Estudo do Modelo Relacional
+        O modelo relacional, introduzido por Ted Codd em 1970, revolucionou o campo dos bancos de dados com sua simplicidade e base matemática na teoria dos conjuntos e na lógica de predicados de primeira ordem. Ele representa o banco de dados como uma coleção de relações, que podem ser visualizadas como tabelas de valores, onde cada linha representa um fato do mundo real.
+        Conceitos Fundamentais:
+            • Domínio: Conjunto de valores atômicos indivisíveis, geralmente especificado por um tipo de dado e um nome. 
+            • Atributo: Cabeçalho da coluna da tabela, representando uma propriedade da entidade ou relacionamento. 
+            • Tupla: Linha da tabela, representando uma coleção de valores relacionados que descrevem um fato. 
+            • Relação: A tabela em si, composta por um conjunto de tuplas sob os mesmos atributos. 
+        Restrições Relacionais:
+        As restrições relacionais garantem a integridade e a consistência dos dados, sendo automaticamente aplicadas pela maioria dos SGBDs relacionais. Algumas das restrições mais importantes são:
+            • Chave Primária: Atributo ou conjunto de atributos que identifica unicamente cada tupla em uma relação. 
+            • Chave Estrangeira: Atributo em uma relação que referencia a chave primária de outra relação, estabelecendo um relacionamento entre elas. 
+            • Restrições de Integridade de Entidade: Garantem que a chave primária não seja nula. 
+            • Restrições de Integridade Referencial: Garantem que as chaves estrangeiras correspondam a chaves primárias existentes em outras relações. 
+        Linguagens de Consulta:
+        Duas linguagens formais principais são usadas para consultar e manipular relações:
+            • Álgebra Relacional: Define um conjunto de operações que podem ser aplicadas às relações para produzir novas relações como resultado de consultas. Exemplos de operações: seleção, projeção, junção e união. 
+            • Cálculo Relacional: Linguagem declarativa que especifica o que deve ser recuperado sem descrever como a consulta deve ser processada. Existem dois tipos principais: cálculo de tuplas e cálculo de domínios. 
+        Projeto de Banco de Dados Relacional:
+        A criação de um esquema de banco de dados relacional eficiente e bem estruturado é crucial para o sucesso de qualquer aplicação. O processo de projeto envolve:
+            1. Mapeamento do Modelo ER para o Relacional: Converte o esquema conceitual, geralmente modelado usando o modelo Entidade-Relacionamento (ER) ou sua extensão EER, em um conjunto de relações. 
+            2. Normalização: Analisa as relações para identificar e eliminar redundâncias e anomalias de atualização, garantindo a integridade dos dados e otimizando o esquema para operações de inserção, exclusão e modificação. 
+        Formas Normais:
+        A normalização é realizada através da aplicação de uma série de testes, chamados formas normais, que garantem a eliminação de dependências funcionais problemáticas. As formas normais mais comuns são:
+            • Primeira Forma Normal (1FN): Elimina atributos multivalorados e compostos, garantindo que cada célula da tabela contenha um único valor atômico. 
+            • Segunda Forma Normal (2FN): Elimina dependências parciais de atributos não-chave em relação à chave primária. 
+            • Terceira Forma Normal (3FN): Elimina dependências transitivas de atributos não-chave em relação à chave primária. 
+            • Forma Normal Boyce-Codd (BCNF): Forma mais estrita da 3FN, onde cada determinante de dependência funcional é uma chave candidata. 
+        O modelo relacional tem se tornado o modelo de dados padrão para a maioria dos SGBDs comerciais, sendo amplamente utilizado em diversas aplicações. A compreensão dos seus conceitos, restrições, linguagens e técnicas de projeto é essencial para a criação de bancos de dados eficientes, robustos e confiáveis.
+        </p>
 </body>
 </html>

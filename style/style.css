@@ -55,7 +55,7 @@ body {
 
 /* Estilos para o nav com a tabela */
 nav {
-    background-color:var(--mais-claro1);   
+    background-color:var(--cor-Borda);   
     display: flex;  /* Define o layout do <nav> como flexível (flexbox), permite o controle de alinhamento e distribuição dos itens internos neste caso a tabela */
     justify-content: center; /* Centraliza a tabela dentro do <nav> */
 }
@@ -71,6 +71,12 @@ h1 {
 img {
     width: 35px;
     height: 42px;
+}
+
+/*Estilo para a lista ordenada*/
+li.menu {
+    background-color:var(--cor-Borda);
+    padding: 8px;
 }
 
 /* Estilos para a tabela */

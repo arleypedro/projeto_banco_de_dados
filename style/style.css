@@ -211,6 +211,21 @@ section {
     height: 250px; 
 }
 
+#modulo2 {
+    background-color: var(--cor-Borda);
+    text-align: justify;
+}
+
+#modulo3 {
+    background-color: var(--cor-complementar);
+    text-align: justify;
+}
+
+#recursos_adcionais {
+    background-color: var(--cor-fundo-secao1);
+    text-align: justify;
+}
+
 /* Estilo para o título da seção #resumo_usuarios */
 #resumo_usuarios h1 {
     color: blue;
@@ -218,7 +233,7 @@ section {
     text-indent: 40px;
 }
 footer {
-    text-align: center;
+    text-align: left;
 }
 .voltar  { 
     color: var(--titulo-cor); /* Escurece a cor do link quando o mouse passa por cima */    
